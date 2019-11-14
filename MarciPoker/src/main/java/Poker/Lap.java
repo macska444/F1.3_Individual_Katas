@@ -1,3 +1,5 @@
+package Poker;
+
 public class Lap{
     
     public int szin;
