@@ -1,4 +1,4 @@
-package Poker;
+package poker;
 
 public class Lap{
     
@@ -9,4 +9,10 @@ public class Lap{
         this.szin = szin;
         this.ertek = ertek;
     }  
+
+    @Override
+    public String toString() {
+        return "Lap{" + "szin=" + szin + ", ertek=" + ertek + '}';
+    }
+    
 }

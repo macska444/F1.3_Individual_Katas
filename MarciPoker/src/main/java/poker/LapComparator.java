@@ -1,12 +1,8 @@
-package Poker;
+package poker;
 
 import java.util.Comparator;
 
-/**
- *
- * @author singer
- */
-public class Comparatorok implements Comparator<Lap>{
+public class LapComparator implements Comparator<Lap>{
  
     @Override
     public int compare(Lap o1, Lap o2) {

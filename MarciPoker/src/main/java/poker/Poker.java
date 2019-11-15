@@ -1,21 +1,34 @@
-package Poker;
+package poker;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public class Poker {
+    
     private static Poker poker = new Poker();
+    
     public static void main(String[] args){
+        ArrayList<Lap> kez = kezGeneralas();
+        kez.sort(new LapComparator());
+        printKez(kez);
+        System.out.println(poker.kiertekel(kez));    
+    }
+
+    public static void printKez(List<Lap> kez) {
+        for (Lap lap : kez) {
+            System.out.println(lap.toString());
+        }
+    }
+
+    protected static ArrayList<Lap>  kezGeneralas() {
         ArrayList<Lap> kez = new ArrayList<Lap>();
         for (int i = 0; i < 5; i++) {
             kez.add(new Lap((int)(Math.random() * 4), (int) (Math.random() * 13)));
         }
-        kez.sort(new Comparatorok());
-        for (Lap lap : kez) {
-            System.out.println(lap.szin + ":" + lap.ertek);
-        }
-        System.out.println(poker.kiertekel(kez));    
+        return kez;
     }
+    
     public String kiertekel(ArrayList<Lap> kez){
         if (egySzinVizsgalat(kez)) {
             if (sorVizsgalat(kez)) {
