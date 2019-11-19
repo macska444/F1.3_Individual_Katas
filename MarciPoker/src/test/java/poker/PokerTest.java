@@ -152,5 +152,36 @@ public class PokerTest {
     public void test(){
         List<Lap> kez = poker.kezGeneralas();
         poker.printKez(kez);
+        assertEquals(5, kez.size());
     }
+    
+    @Test
+    public void testLetezoElsoLap(){
+       List<Lap> kez = new ArrayList<>();
+       Lap ujLap = new Lap(0, 10);
+       assertTrue(poker.isEgyediLap(ujLap, kez));
+    }
+    
+    @Test
+    public void testLetezoMasodikLap(){
+       List<Lap> kez = new ArrayList<>();
+       Lap ujLap = new Lap(0, 10);
+       Lap ujLap2 = new Lap(0, 10);
+       kez.add(ujLap);
+       assertFalse(poker.isEgyediLap(ujLap2, kez));
+    }
+
+    @Test
+    public void testLetezoNegyedikLap(){
+       List<Lap> kez = new ArrayList<>();
+       Lap ujLap = new Lap(0, 10);
+       kez.add(ujLap);
+       ujLap = new Lap(1, 10);
+       kez.add(ujLap);
+       ujLap = new Lap(2, 10);
+       kez.add(ujLap);
+       ujLap = new Lap(3, 10);       
+       assertTrue(poker.isEgyediLap(ujLap, kez));
+    }
+
 }

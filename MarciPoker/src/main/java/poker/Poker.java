@@ -23,12 +23,19 @@ public class Poker {
 
     protected static ArrayList<Lap>  kezGeneralas() {
         ArrayList<Lap> kez = new ArrayList<Lap>();
-        for (int i = 0; i < 5; i++) {
-            kez.add(new Lap((int)(Math.random() * 4), (int) (Math.random() * 13)));
+        while (kez.size() < 5) {
+            Lap ujLap = new Lap((int)(Math.random() * 4), (int) (Math.random() * 13));
+            if (isEgyediLap(ujLap, kez)) {
+                kez.add(ujLap);
+            }
         }
         return kez;
     }
     
+    static boolean isEgyediLap(Lap ujLap, List<Lap> kez) {        
+        return !kez.contains(ujLap);
+    }
+
     public String kiertekel(ArrayList<Lap> kez){
         if (egySzinVizsgalat(kez)) {
             if (sorVizsgalat(kez)) {
@@ -139,4 +146,5 @@ public class Poker {
         }
         return false;        
     }
+
 }
