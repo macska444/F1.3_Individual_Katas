@@ -23,7 +23,6 @@ public class CardTest {
     
     @BeforeClass
     public static void setUpClass() {
-        rankOrder.inic();
     }
     
     @AfterClass
@@ -40,28 +39,26 @@ public class CardTest {
 
     @Test
     public void testConstructorAce() {
-//        rankOrder.inic();        
-        Card myCard= new Card("Spade","A");
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-        System.out.println(myCard.rankHighValue + " " + myCard.rankLowValue + " " + myCard.rankSymbol + " " + myCard.suit);
+        Card myCard= new Card("Spade","Ace");
+        System.out.println(myCard.rankHighValue + " " + myCard.rankLowValue + " " + myCard.rankName + " " + myCard.suit);
+        
     }
     
     @Test
     public void testConstructorKing() {
 //        rankOrder.inic();        
-        Card myCard= new Card("Heart","K");
+        Card myCard= new Card("Heart","King");
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
-        System.out.println(myCard.rankHighValue + " " + myCard.rankLowValue + " " + myCard.rankSymbol + " " + myCard.suit);
+        System.out.println(myCard.rankHighValue + " " + myCard.rankLowValue + " " + myCard.rankName + " " + myCard.suit);
     }
     @Test
     public void testConstructorFour() {
 //        rankOrder.inic();        
-        Card myCard= new Card("Diamond","4");
+        Card myCard= new Card("Diamond","Four");
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
-        System.out.println(myCard.rankHighValue + " " + myCard.rankLowValue + " " + myCard.rankSymbol + " " + myCard.suit);
+        System.out.println(myCard.rankHighValue + " " + myCard.rankLowValue + " " + myCard.rankName + " " + myCard.suit);
     }
 
 }

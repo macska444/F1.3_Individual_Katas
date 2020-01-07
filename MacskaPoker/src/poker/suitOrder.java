@@ -1,34 +1,41 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package poker;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
  * @author Macska
  */
 public class suitOrder {
-    public static HashMap<String, Integer> cardSuits= new HashMap<String, Integer>();
+    public static HashMap<String, Integer> cardSuits= inic();
     
     /**
      *
      */
-    public static void inic () {
+    private static HashMap<String, Integer> inic () {
         System.out.println("suitOrder inic");
+        HashMap<String, Integer> suits = new HashMap();
                 
-        cardSuits.put( "Spade",1);
-        cardSuits.put( "Heart",2);
-        cardSuits.put( "Diamond",3);
-        cardSuits.put( "Club",4);
+        suits.put( "Spades",1);
+        suits.put( "Hearts",2);
+        suits.put( "Diamonds",3);
+        suits.put( "Clubs",4);
+        return(suits);
      }
     
-    public static int getSuitValue(String pSuitSymbol) {
-        return cardSuits.get(pSuitSymbol);
+    public static int getSuitValueByName(String suitName) {
+        return cardSuits.get(suitName);
     }
-   
+
+    public static String getSuitNameByValue(int suitCode) {
+       for (Map.Entry<String, Integer> entry : cardSuits.entrySet()) {
+            if (entry.getValue()==suitCode) {
+                return entry.getKey();
+            }
+        }
+    return("No such card");
+    }
+    
     
 }

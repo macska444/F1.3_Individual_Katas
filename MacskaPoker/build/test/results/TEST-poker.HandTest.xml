@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="DESKTOP-5QUTRF0" name="poker.HandTest" skipped="0" tests="10" time="0.169" timestamp="2019-10-15T06:00:23">
+<testsuite errors="0" failures="0" hostname="DESKTOP-5QUTRF0" name="poker.HandTest" skipped="0" tests="20" time="0.202" timestamp="2019-12-28T13:41:38">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="HU" />
@@ -57,7 +57,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner poker.HandTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Acer\Documents\NetBeansProjects\Poker\build\test\results\TEST-poker.HandTest.xml crashfile=C:\Users\Acer\Documents\NetBeansProjects\Poker\build\junitvmwatcher6313990225811728989.properties propsfile=C:\Users\Acer\Documents\NetBeansProjects\Poker\build\junit7053276129927789848.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner poker.HandTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Acer\Documents\NetBeansProjects\Poker\build\test\results\TEST-poker.HandTest.xml crashfile=C:\Users\Acer\Documents\NetBeansProjects\Poker\build\junitvmwatcher2331377221560610642.properties propsfile=C:\Users\Acer\Documents\NetBeansProjects\Poker\build\junit7418052760582170892.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -110,6 +110,7 @@
     <property name="libs.hibernate4-persistencemodelgen.javadoc" value="" />
     <property name="libs.jaxb.javadoc" value="C:\Program Files\NetBeans 8.2\ide\docs\jaxb-api-doc.zip" />
     <property name="libs.struts.classpath" value="C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\antlr-2.7.2.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\bsf-2.3.0.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-beanutils-1.8.0.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-chain-1.2.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-digester-1.8.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-fileupload-1.1.1.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-io-1.1.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-logging-1.0.4.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\commons-validator-1.3.1.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\jstl-1.0.2.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\oro-2.0.8.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\standard-1.0.6.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-core-1.3.10.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-el-1.3.10.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-extras-1.3.10.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-faces-1.3.10.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-mailreader-dao-1.3.10.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-scripting-1.3.10.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-taglib-1.3.10.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\struts\struts-tiles-1.3.10.jar" />
+    <property name="org.openide.awt.SwingBrowserImpl.do-not-block-awt" value="true" />
     <property name="ant.home" value="C:\Program Files\NetBeans 8.2\extide\ant" />
     <property name="libs.junit_4.src" value="C:\Program Files\NetBeans 8.2\platform\docs\junit-4.12-sources.jar" />
     <property name="libs.testng.classpath" value="C:\Program Files\NetBeans 8.2\platform\modules\ext\testng-6.8.1-dist.jar" />
@@ -301,12 +302,12 @@
     <property name="libs.swing-layout.classpath" value="C:\Program Files\NetBeans 8.2\platform\modules\ext\swing-layout-1.0.4.jar" />
     <property name="libs.javaee-web-api-7.0.maven-pom" value="" />
     <property name="libs.restlib.src" value="" />
-    <property name="build.generated.dir" value="build/generated" />
     <property name="javac.source" value="1.8" />
+    <property name="build.generated.dir" value="build/generated" />
     <property name="line.separator" value="&#xd;&#xa;" />
     <property name="java.specification.version" value="1.8" />
-    <property name="libs.jaxws21.maven-pom" value="" />
     <property name="java.vm.info" value="mixed mode" />
+    <property name="libs.jaxws21.maven-pom" value="" />
     <property name="nb.junit.batch" value="true" />
     <property name="junit.forkmode" value="perTest" />
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes" />
@@ -328,13 +329,13 @@
     <property name="dist.dir" value="dist" />
     <property name="libs.groovy-all.javadoc" value="" />
     <property name="testng.debug.mode" value="" />
-    <property name="libs.groovy-all.classpath" value="C:\Program Files\NetBeans 8.2\groovy\modules\ext\groovy-all.jar" />
     <property name="javac.fork" value="true" />
+    <property name="libs.groovy-all.classpath" value="C:\Program Files\NetBeans 8.2\groovy\modules\ext\groovy-all.jar" />
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
     <property name="default.javac.source" value="1.8" />
     <property name="debug-transport-by-os" value="dt_shmem" />
-    <property name="sun.jnu.encoding" value="Cp1250" />
     <property name="libs.MySQLDriver.src" value="" />
+    <property name="sun.jnu.encoding" value="Cp1250" />
     <property name="build.test.results.dir" value="build/test/results" />
     <property name="java.runtime.version" value="1.8.0_144-b01" />
     <property name="default.javac.target" value="1.8" />
@@ -344,8 +345,8 @@
     <property name="libs.javaee-endorsed-api-6.0.maven-pom" value="" />
     <property name="netbeans.dirs" value="C:\Program Files\NetBeans 8.2\nb;C:\Program Files\NetBeans 8.2\ergonomics;C:\Program Files\NetBeans 8.2\ide;C:\Program Files\NetBeans 8.2\extide;C:\Program Files\NetBeans 8.2\java;C:\Program Files\NetBeans 8.2\apisupport;C:\Program Files\NetBeans 8.2\webcommon;C:\Program Files\NetBeans 8.2\websvccommon;C:\Program Files\NetBeans 8.2\enterprise;C:\Program Files\NetBeans 8.2\mobility;C:\Program Files\NetBeans 8.2\profiler;C:\Program Files\NetBeans 8.2\python;C:\Program Files\NetBeans 8.2\php;C:\Program Files\NetBeans 8.2\identity;C:\Program Files\NetBeans 8.2\harness;C:\Program Files\NetBeans 8.2\cnd;C:\Program Files\NetBeans 8.2\cndext;C:\Program Files\NetBeans 8.2\dlight;C:\Program Files\NetBeans 8.2\groovy;C:\Program Files\NetBeans 8.2\extra;C:\Program Files\NetBeans 8.2\javacard;C:\Program Files\NetBeans 8.2\javafx" />
     <property name="libs.jsf20.javadoc" value="C:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
-    <property name="libs.jstl.javadoc" value="C:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
     <property name="ant.file.type.Poker-impl" value="file" />
+    <property name="libs.jstl.javadoc" value="C:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
     <property name="libs.metro.src" value="" />
     <property name="libs.absolutelayout.classpath" value="C:\Program Files\NetBeans 8.2\java\modules\ext\AbsoluteLayout.jar" />
@@ -370,10 +371,10 @@
     <property name="libs.restlib.javadoc" value="" />
     <property name="nb.internal.action.name" value="test" />
     <property name="libs.JAXB-ENDORSED.classpath" value="C:\Program Files\NetBeans 8.2\ide\modules\ext\jaxb\api\jaxb-api.jar" />
-    <property name="libs.javaee-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
     <property name="libs.eclipselink.classpath" value="C:\Program Files\NetBeans 8.2\java\modules\ext\eclipselink\eclipselink.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\eclipselink\javax.persistence_2.1.0.v201304241213.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" />
-    <property name="libs.beans-binding.javadoc" value="C:\Program Files\NetBeans 8.2\java\docs\beansbinding-1.2.1-doc.zip" />
+    <property name="libs.javaee-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="libs.beans-binding.javadoc" value="C:\Program Files\NetBeans 8.2\java\docs\beansbinding-1.2.1-doc.zip" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="libs.CopyLibs.classpath" value="C:\Program Files\NetBeans 8.2\java\ant\extra\org-netbeans-modules-java-j2seproject-copylibstask.jar" />
     <property name="libs.spring-framework300.classpath" value="C:\Program Files\NetBeans 8.2\ide\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-aop-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-aspects-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-beans-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-build-src-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-context-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-context-support-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-core-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-expression-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-framework-bom-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-instrument-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-instrument-tomcat-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-jdbc-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-jms-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-orm-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-oxm-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-struts-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-test-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-tx-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-web-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-webmvc-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.2\java\modules\ext\spring-3.0\spring-webmvc-portlet-3.2.7.RELEASE.jar" />
@@ -396,8 +397,8 @@
     <property name="libs.jsp-compilation.classpath" value="C:\Program Files\NetBeans 8.2\extide\ant\lib\ant.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\servlet3.1-jsp2.3-api.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\glassfish-jspparser-4.0.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\jsf-2_2\javax.faces.jar;C:\Program Files\NetBeans 8.2\enterprise\modules\ext\jstl-api.jar;C:\Program Files\NetBeans 8.2\extide\ant\lib\ant-launcher.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.7 compiled on April 9 2016" />
     <property name="ant.file.type.Poker" value="file" />
-    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
     <property name="file.encoding" value="Cp1250" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
     <property name="javadoc.nonavbar" value="false" />
     <property name="jdkBug6558476" value="false" />
     <property name="libs.spring-webmvc4.0.classpath" value="C:\Program Files\NetBeans 8.2\java\modules\ext\spring-4\spring-webmvc-4.0.1.RELEASE.jar" />
@@ -405,55 +406,194 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="poker.HandTest" name="testEvalHighStraight" time="0.006" />
-  <testcase classname="poker.HandTest" name="testEvalPoker4" time="0.001" />
-  <testcase classname="poker.HandTest" name="testAddCard1" time="0.001" />
+  <testcase classname="poker.HandTest" name="testEvalAceHighStraight" time="0.013" />
+  <testcase classname="poker.HandTest" name="testEvalHighCardAce" time="0.001" />
+  <testcase classname="poker.HandTest" name="testEvalAceHighFlush" time="0.001" />
+  <testcase classname="poker.HandTest" name="testPrintEmptyHand" time="0.0" />
+  <testcase classname="poker.HandTest" name="testEvalRoyalFlushinSpades" time="0.001" />
+  <testcase classname="poker.HandTest" name="testEvalPoker4" time="0.0" />
+  <testcase classname="poker.HandTest" name="testAddCard1" time="0.0" />
   <testcase classname="poker.HandTest" name="testAddCard6" time="0.001" />
-  <testcase classname="poker.HandTest" name="testEvalHighStraightFlushinSpade" time="0.001" />
+  <testcase classname="poker.HandTest" name="testEvalQueenHighStraightFlushinDiamonds" time="0.001" />
+  <testcase classname="poker.HandTest" name="testEvalFalseQueenHighStraight" time="0.001" />
+  <testcase classname="poker.HandTest" name="testAddSameCard" time="0.001" />
+  <testcase classname="poker.HandTest" name="testEvalHighCardKing" time="0.0" />
+  <testcase classname="poker.HandTest" name="testEvalKingHighFlush" time="0.001" />
   <testcase classname="poker.HandTest" name="testEvalFull" time="0.001" />
-  <testcase classname="poker.HandTest" name="testEvalPair" time="0.001" />
-  <testcase classname="poker.HandTest" name="testEvalDrill" time="0.001" />
-  <testcase classname="poker.HandTest" name="testEvalFlush" time="0.001" />
-  <testcase classname="poker.HandTest" name="testEvalTwoPairs" time="0.001" />
-  <system-out><![CDATA[suitOrder inic
+  <testcase classname="poker.HandTest" name="testEvalFiveHighStraight" time="0.012" />
+  <testcase classname="poker.HandTest" name="testEvalOnePair" time="0.006" />
+  <testcase classname="poker.HandTest" name="testEvalDrill" time="0.004" />
+  <testcase classname="poker.HandTest" name="testEvalTwoPair" time="0.003" />
+  <testcase classname="poker.HandTest" name="testEvalFiveHighStraightFlushinClubs" time="0.002" />
+  <testcase classname="poker.HandTest" name="testEvalQueenHighStraight" time="0.001" />
+  <system-out><![CDATA[testEvalAceHighStraight
 rankOrder inic
-eval
-Straight starting with 10
-13 10
-Number of Kings: 1
-eval
-Poker in 4
-10 4
-Number of Kings: 0
-Add 1 Card
-Spade 4
-Add 6 Card
-Csak 5 lap lehet egy kézben
-5
-eval
-Straight flush starting with 10 in Spade
-13 10
-Number of Kings: 1
-eval
-Full
-10 4
-Number of Kings: 0
-eval
-Pair
-13 4
-Number of Kings: 1
-eval
-Drill
-13 4
-Number of Kings: 1
-eval
-Flush in Spade
-13 3
-Number of Kings: 1
-eval
-Two pairs
-13 4
-Number of Kings: 2
+suitOrder inic
+This hand has 5 cards
+As follows:
+Spades Ten
+Clubs Jack
+Spades Queen
+Spades King
+Diamonds Ace
+The value of Hand: Ace-high straight
+testEvalOnePair
+This hand has 5 cards
+As follows:
+Spades Four
+Clubs Five
+Spades Ten
+Hearts King
+Diamonds Ace
+The value of Hand: High card, Ace
+testEvalAceHighFlush
+This hand has 5 cards
+As follows:
+Spades Three
+Spades Four
+Spades Ten
+Spades Queen
+Spades Ace
+The value of Hand: Ace-high flush in Spades
+testPrintEmptyHand
+This hand has 0 card
+As follows:
+testEvalRoyalFlushinSpades
+This hand has 5 cards
+As follows:
+Spades Ten
+Spades Jack
+Spades Queen
+Spades King
+Spades Ace
+The value of Hand: Royal flush in Spades
+testEvalPoker4
+This hand has 5 cards
+As follows:
+Spades Four
+Hearts Four
+Diamonds Four
+Clubs Four
+Spades Ten
+The value of Hand: Poker, Fours
+testAddCard1
+This hand has 1 card
+As follows:
+Spades Four
+testAddCard6
+Caution: One hand should have no more than 5 cards
+This hand has 5 cards
+As follows:
+Spades Ten
+Spades Jack
+Spades Queen
+Spades King
+Spades Ace
+testEvalQueenHighStraightFlushinDiamonds
+This hand has 5 cards
+As follows:
+Diamonds Eight
+Diamonds Nine
+Diamonds Ten
+Diamonds Jack
+Diamonds Queen
+The value of Hand: Queen-high straight flush in Diamonds
+testEvalFalseQueenHighStraight
+This hand has 5 cards
+As follows:
+Hearts Eight
+Diamonds Eight
+Diamonds Ten
+Diamonds Jack
+Diamonds Queen
+The value of Hand: Pair of Eights
+testAddSameCard
+Caution: This card is in hand already
+This hand has 2 cards
+As follows:
+Spades King
+Diamonds Ace
+testEvalOnePair
+This hand has 5 cards
+As follows:
+Spades Four
+Clubs Five
+Diamonds Nine
+Spades Ten
+Hearts King
+The value of Hand: High card, King
+testEvalKingHighFlush
+This hand has 5 cards
+As follows:
+Spades Three
+Spades Four
+Spades Ten
+Spades Queen
+Spades King
+The value of Hand: King-high flush in Spades
+testEvalFull
+This hand has 5 cards
+As follows:
+Spades Four
+Hearts Four
+Spades Ten
+Diamonds Ten
+Clubs Ten
+The value of Hand: Full house, Tens over Fours
+testEvalFiveHighStraight
+This hand has 5 cards
+As follows:
+Hearts Two
+Clubs Three
+Clubs Four
+Clubs Five
+Clubs Ace
+The value of Hand: Five-high straight
+testEvalOnePair
+This hand has 5 cards
+As follows:
+Spades Four
+Spades Ten
+Clubs Ten
+Hearts King
+Diamonds Ace
+The value of Hand: Pair of Tens
+testEvalDrill
+This hand has 5 cards
+As follows:
+Spades Four
+Spades Ten
+Diamonds Ten
+Clubs Ten
+Hearts King
+The value of Hand: Drill of Tens
+testEvalTwoPair
+This hand has 5 cards
+As follows:
+Spades Four
+Spades Ten
+Clubs Ten
+Hearts King
+Diamonds King
+The value of Hand: Two pair, Kings over Tens
+testEvalFiveHighStraightFlushinClubs
+This hand has 5 cards
+As follows:
+Clubs Two
+Clubs Three
+Clubs Four
+Clubs Five
+Clubs Ace
+The value of Hand: Five-high straight flush in Clubs
+testEvalQueenHighStraight
+This hand has 5 cards
+As follows:
+Hearts Eight
+Diamonds Nine
+Diamonds Ten
+Diamonds Jack
+Diamonds Queen
+The value of Hand: Queen-high straight
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

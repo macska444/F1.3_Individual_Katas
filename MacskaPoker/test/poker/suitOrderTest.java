@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package poker;
 
 import org.junit.After;
@@ -14,7 +9,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Acer
+ * @author Macska
  */
 public class suitOrderTest {
     
@@ -23,7 +18,6 @@ public class suitOrderTest {
     
     @BeforeClass
     public static void setUpClass() {
-        suitOrder.inic();
     }
     
     @AfterClass
@@ -39,22 +33,21 @@ public class suitOrderTest {
     }
 
     @Test
-    public void testSpade() {
-        System.out.println("getSuitValue Spade");
-        String pSuit = "Spade";
+    public void testgetSuitValueSpades() {
+        System.out.println("testgetSuitValueSpades");
+        String suit = "Spades";
         int expResult = 1;
-        int result = suitOrder.getSuitValue(pSuit);
+        int result = suitOrder.getSuitValueByName(suit);
         assertEquals(expResult, result);
     
     }
     @Test
-    public void testDiamond() {
-        System.out.println("getSuitValue Diamond");
-        String pSuit = "Diamond";
+    public void testgetSuitValueDiamonds() {
+        System.out.println("testgetSuitValueDiamonds");
+        String suit = "Diamonds";
         int expResult = 3;
-        int result = suitOrder.getSuitValue(pSuit);
-        assertEquals(expResult, result);
-    
+        int result = suitOrder.getSuitValueByName(suit);
+        assertEquals(expResult, result);   
     }
     
 }
