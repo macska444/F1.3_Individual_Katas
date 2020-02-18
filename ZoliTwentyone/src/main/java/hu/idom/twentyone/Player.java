@@ -7,6 +7,8 @@ public class Player {
 
     public String name;
     public List<Card> cards;
+    public int cardValue;
+    public boolean isTwoAces;
 
     public Player(String name) {
         this.name = name;
@@ -17,4 +19,10 @@ public class Player {
         cards.add(card);
     }
 
+    @Override
+    public String toString() {
+        return name + ": " + cardValue;
+    }
+
+    
 }
