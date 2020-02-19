@@ -22,9 +22,17 @@ public class TwentyOneGame {
         if (players == null) {
             throw new GameCantStartException();
         }
+        validateNumberOfPlayers(players);
+        validatePlayerName(players);
+    }
+
+    private void validateNumberOfPlayers(List<Player> players) throws GameCantStartException {
         if (players.size() < MINIMUM_NUMBER_OF_PLAYERS || players.size() > MAXIMUM_NUMBER_OF_PLAYERS) {
             throw new GameCantStartException();
         }
+    }
+
+    private void validatePlayerName(List<Player> players) throws GameCantStartException {
         boolean hasSameName = false;
         for (int i = 0; i < players.size(); i++) {
             for (int j = 0; j < players.size(); j++) {
@@ -56,31 +64,56 @@ public class TwentyOneGame {
     }
 
     public void pickCard(Player player) {
+        validateExistingPlayer(player);
+        Card card = pickCardFromDeck();
+        addCardToPlayerAndCalculate(player, card);
+    }
+
+    private void validateExistingPlayer(Player player) throws NoSuchPlayerException {
+        boolean existingPlayer = false;
+        for (Player playerInList : players) {
+            if (playerInList.name.equals(player.name)){
+                existingPlayer = true;
+            }
+        }
+        if (!existingPlayer){
+            throw  new NoSuchPlayerException();
+        }
+    }
+
+    private Card pickCardFromDeck() {
         int random = Double.valueOf(Math.random() * deck.size()).intValue();
         Card card = deck.get(random);
-        player.addCard(card);
         deck.remove(random);
+        return card;
+    }
+
+    private void addCardToPlayerAndCalculate(Player player, Card card) {
+        player.addCard(card);
+        calculatePlayerCardsValue(player);
         validateTooMuchCardValue(player);
     }
 
-    private void validateTooMuchCardValue(Player player) throws TooMuchException {
-        if (calculatePlayerCardsValue(player) > WINNING_POINT) {
+    private void validateTooMuchCardValue(Player player) {
+        if (player.cardValue > WINNING_POINT) {
             players.remove(player);
+            if (players.size() < 1){
+                throw new EmptyPlayersException();
+            }
             throw new TooMuchException();
         }
     }
 
-    public int calculatePlayerCardsValue(Player player) {
+    protected void calculatePlayerCardsValue(Player player) {
         int sumValue = 0;
         for (Card cardValue : player.cards) {
             sumValue += cardValue.rank.getValue();
         }
         if (sumValue == 22 && isTwoAces(player.cards)) {
+            player.isTwoAces = true;
             sumValue = WINNING_POINT;
-        } else if (sumValue > WINNING_POINT) {
-            throw new TooMuchException();
         }
-        return sumValue;
+        player.cardValue = sumValue;
     }
 
     protected boolean isTwoAces(List<Card> cards) {
@@ -96,12 +129,10 @@ public class TwentyOneGame {
     public Player searchWinner() {
         Player winnerPlayer = players.get(0);
         for (Player player : players) {
-            int playerCardValue = calculatePlayerCardsValue(player);
-            int winnerPlayerCardValue = calculatePlayerCardsValue(winnerPlayer);
-            if (playerCardValue > winnerPlayerCardValue) {
+            if (player.cardValue > winnerPlayer.cardValue) {
                 winnerPlayer = player;
-            } else if (playerCardValue == winnerPlayerCardValue && !player.name.equals(winnerPlayer.name)) {
-                if (isTwoAces(player.cards)) {
+            } else if (player.cardValue == winnerPlayer.cardValue && !player.name.equals(winnerPlayer.name)) {
+                if (player.isTwoAces) {
                     winnerPlayer = player;
                 } else if (player.cards.size() < winnerPlayer.cards.size()) {
                     winnerPlayer = player;
