@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="08d4d1f2-0440-4b97-a013-216b89a58ce1" name="Default Changelist" comment="">
+      <change afterPath="$USER_HOME$/Sources/dojo/FizzBuzz1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/FizzBuzz1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/ZoliPoker/poker.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/magyar21_macs.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/pom.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/src/main/java/Game21/Game21.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/src/test/java/Game21/Game21Test.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/target/classes/Game21/Game21.class" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/target/classes/META-INF/magyar21_macs.kotlin_module" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/target/test-classes/Game21/Game21Test.class" afterDir="false" />
+      <change afterPath="$USER_HOME$/Sources/dojo/magyar21_macs/target/test-classes/META-INF/magyar21_macs.kotlin_module" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideInfoMessages" value="true" />
+    <option name="HIDE_INFO_MESSAGES" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="macska444@gmail.com" />
+        <option value="macska" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Sources" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XmMUdUIMWRC37CBfkieCqnnbi9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="true" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="magyar21_macs" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Sources/dojo" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Game21" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/Sources/dojo" />
+      <recent name="$USER_HOME$/Sources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Game21Test.evaluateHandTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="magyar21_macs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Game21.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Game21" />
+      <option name="MAIN_CLASS_NAME" value="Game21.Game21Test" />
+      <option name="METHOD_NAME" value="evaluateHandTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="true" />
+            <option name="workingDirPath" value="$USER_HOME$/Sources/magyar21_macs" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.Game21Test.evaluateHandTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08d4d1f2-0440-4b97-a013-216b89a58ce1" name="Default Changelist" comment="" />
+      <created>1581646833883</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581646833883</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/macska/Sources/dojo/magyar21_macs" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="az első magyar21 project, csak a git gyakorlás miatt" />
+    <option name="LAST_COMMIT_MESSAGE" value="az első magyar21 project, csak a git gyakorlás miatt" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="588" y="214" width="848" height="677" key="#Project_Structure" timestamp="1581647247297">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="214" width="848" height="677" key="#Project_Structure/67.27.1853.1053@67.27.1853.1053" timestamp="1581647247297" />
+    <state x="451" y="211" width="1084" height="785" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582176474830">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="451" y="211" width="1084" height="785" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582176474830" />
+    <state x="750" y="83" width="476" height="939" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582345235315">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="750" y="83" width="476" height="939" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582345235315" />
+    <state x="597" y="96" width="782" height="912" key="CommitChangelistDialog2" timestamp="1582349837753">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="597" y="96" width="782" height="912" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1582349837753" />
+    <state x="771" y="296" width="424" height="513" key="FileChooserDialogImpl" timestamp="1582348457855">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="771" y="296" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1582348457855" />
+    <state width="1853" height="286" key="GridCell.Tab.0.bottom" timestamp="1582348783725">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1853" height="286" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1582348783725" />
+    <state width="1853" height="286" key="GridCell.Tab.0.center" timestamp="1582348783723">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1853" height="286" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1582348783723" />
+    <state width="1853" height="286" key="GridCell.Tab.0.left" timestamp="1582348783723">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1853" height="286" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1582348783723" />
+    <state width="1853" height="286" key="GridCell.Tab.0.right" timestamp="1582348783724">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1853" height="286" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1582348783724" />
+    <state x="579" y="207" width="819" height="691" key="NewModule_or_Project.wizard" timestamp="1582347806260">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="579" y="207" width="819" height="691" key="NewModule_or_Project.wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1582347806259" />
+    <state x="765" y="99" width="1024" height="845" key="SettingsEditor" timestamp="1582346774464">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="765" y="99" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1582346774464" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582350472275">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1582350472275" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1582086278813">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1582086278813" />
+    <state x="761" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582349390466">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="761" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1582349390466" />
+    <state x="767" y="225" width="442" height="656" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581647878662">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="767" y="225" width="442" height="656" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581647878662" />
+    <state x="302" y="199" width="1372" height="708" key="new project wizard" timestamp="1581647536906">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="302" y="199" width="1372" height="708" key="new project wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1581647536906" />
+  </component>
+</project>
