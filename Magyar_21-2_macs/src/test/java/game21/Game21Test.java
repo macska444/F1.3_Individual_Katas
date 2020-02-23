@@ -45,7 +45,7 @@ public class Game21Test {
     public void evalHandOverTest() {
         List<Integer> hand = Arrays.asList(MagyarkartyaRank.VII.value, MagyarkartyaRank.KIRALY.value, MagyarkartyaRank.ASZ.value);
         HandType type = game.evalHandType(hand);
-        HandType expected = HandType.OVER;
+        HandType expected = HandType.BUST;
         assertEquals(expected, type);
     }
 
@@ -57,5 +57,11 @@ public class Game21Test {
         assertEquals(expected, type);
     }
 
-
+    @Test
+    public void evalHand2AceTest() {
+        List<Integer> hand = Arrays.asList(MagyarkartyaRank.ASZ.value, MagyarkartyaRank.ASZ.value);
+        HandType type = game.evalHandType(hand);
+        HandType expected = HandType.BLACKJACK;
+        assertEquals(expected, type);
+    }
 }
