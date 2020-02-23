@@ -20,6 +20,8 @@ public class Game21 {
             return HandType.NOT_ENOUGH;
         } else if (score > MAXIMUM_OF_HAND_VALUE) {
             return HandType.OVER;
+        } else if (score == MAXIMUM_OF_HAND_VALUE) {
+            return HandType.BLACKJACK;
         } else {
             return HandType.CAN_STOP_OR_ASK_MORE;
         }

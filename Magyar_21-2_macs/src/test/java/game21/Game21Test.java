@@ -49,5 +49,13 @@ public class Game21Test {
         assertEquals(expected, type);
     }
 
+    @Test
+    public void evalHand21Test() {
+        List<Integer> hand = Arrays.asList(MagyarkartyaRank.VII.value, MagyarkartyaRank.KIRALY.value, MagyarkartyaRank.X.value);
+        HandType type = game.evalHandType(hand);
+        HandType expected = HandType.BLACKJACK;
+        assertEquals(expected, type);
+    }
+
 
 }
