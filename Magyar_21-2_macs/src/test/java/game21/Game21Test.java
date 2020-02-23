@@ -20,7 +20,7 @@ public class Game21Test {
     @Test
     public void evalHandTest() {
         List<Integer> hand = Arrays.asList(MagyarkartyaRank.VII.value);
-        Integer score = game.evalHand(hand);
+        Integer score = game.evalHandValue(hand);
         Integer expected = 7;
         assertEquals(expected, score);
     }
@@ -28,7 +28,7 @@ public class Game21Test {
     @Test
     public void evalHandWith2CardsTest() {
         List<Integer> hand = Arrays.asList(MagyarkartyaRank.VII.value, MagyarkartyaRank.KIRALY.value);
-        Integer score = game.evalHand(hand);
+        Integer score = game.evalHandValue(hand);
         Integer expected = 11;
         assertEquals(expected, score);
     }
@@ -40,4 +40,14 @@ public class Game21Test {
         HandType expected = HandType.NOT_ENOUGH;
         assertEquals(expected, type);
     }
+
+    @Test
+    public void evalHandOverTest() {
+        List<Integer> hand = Arrays.asList(MagyarkartyaRank.VII.value, MagyarkartyaRank.KIRALY.value, MagyarkartyaRank.ASZ.value);
+        HandType type = game.evalHandType(hand);
+        HandType expected = HandType.OVER;
+        assertEquals(expected, type);
+    }
+
+
 }

@@ -3,9 +3,10 @@ package game21;
 import java.util.List;
 
 public class Game21 {
-    private static final Integer MINIMUM_VALUE_OF_HAND = 15;
+    private static final Integer MINIMUM_OF_HAND_VALUE = 15;
+    private static final Integer MAXIMUM_OF_HAND_VALUE = 21;
 
-    public Integer evalHand(List<Integer> hand) {
+    public Integer evalHandValue(List<Integer> hand) {
         Integer score = 0;
         for (Integer card : hand) {
             score += card;
@@ -14,9 +15,11 @@ public class Game21 {
     }
 
     public HandType evalHandType(List<Integer> hand) {
-        Integer score = evalHand(hand);
-        if (score < MINIMUM_VALUE_OF_HAND) {
+        Integer score = evalHandValue(hand);
+        if (score < MINIMUM_OF_HAND_VALUE) {
             return HandType.NOT_ENOUGH;
+        } else if (score > MAXIMUM_OF_HAND_VALUE) {
+            return HandType.OVER;
         } else {
             return HandType.CAN_STOP_OR_ASK_MORE;
         }
