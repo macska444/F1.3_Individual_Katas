@@ -127,7 +127,7 @@ public class HandTest {
     }
 
     @Test
-    public void rightWithout2AceTest() {
+    public void rightWithoutAceTest() {
         hand = new Hand();
         hand.addCard(HunCardRanks.VII.getValue());
         hand.addCard(HunCardRanks.KIRALY.getValue());
@@ -150,4 +150,24 @@ public class HandTest {
         hand.evaluateHand();
         hand.playerSaysWithoutAce();
     }
+
+    @Test
+    public void gotAceAfterWithoutAceTest() {
+        hand = new Hand();
+        hand.addCard(HunCardRanks.VII.getValue());
+        hand.addCard(HunCardRanks.KIRALY.getValue());
+        hand.evaluateHand();
+        hand.playerSaysWithoutAce();
+        hand.addCard(HunCardRanks.ASZ.getValue());
+        hand.evaluateHand();
+
+        Integer expectedSumOfCards = 22;
+        Integer expectedNumberOfCards = 3;
+        String expectedScore = HandScores.MAY_GET_NEW_HAND.toString();
+        assertEquals(expectedSumOfCards, hand.getSumOfCards());
+        assertEquals(expectedNumberOfCards, hand.getNumberOfCards());
+        assertTrue(hand.isWithoutAce());
+        assertEquals(expectedScore, hand.getActualScore());
+    }
+
 }

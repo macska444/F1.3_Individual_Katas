@@ -56,9 +56,19 @@ public class Hand {
         } else if (sumOfCards > 21) {
             if (numberOfCards == 2 && handHas2Aces()) {
                 actualScore = HandScores.BLACKJACK.toString();
+            } else if (isWithoutAce() && lastCardIsAce()) {
+                actualScore = HandScores.MAY_GET_NEW_HAND.toString();
             } else {
                 actualScore = HandScores.BUST.toString();
             }
+        }
+    }
+
+    private boolean lastCardIsAce() {
+        if (hand == null || hand.size() == 0) {
+            return false;
+        } else {
+            return hand.get(hand.size() - 1) == HunCardRanks.ASZ.getValue();
         }
     }
 
