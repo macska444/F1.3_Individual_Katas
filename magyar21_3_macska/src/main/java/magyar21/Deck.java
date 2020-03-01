@@ -1,6 +1,7 @@
 package magyar21;
 
 import java.util.LinkedList;
+import java.util.Random;
 
 
 public class Deck {
@@ -13,5 +14,13 @@ public class Deck {
                 deck.add(rank.getValue());
             }
         }
+    }
+
+    public Integer getNextCard() {
+        int deckSize = deck.size();
+        int nextIndex = new Random().nextInt(deckSize - 1);
+        Integer nextCard = deck.get(nextIndex);
+        deck.remove(nextIndex);
+        return nextCard;
     }
 }

@@ -15,4 +15,24 @@ public class DeckTest {
         assertEquals(expectedNumOfCards, myDeck.deck.size());
     }
 
+    @Test
+    public void getNextCard() {
+        Deck myDeck = new Deck();
+        Integer nextCard = myDeck.getNextCard();
+        System.out.println("Következő kártya: " + nextCard);
+        int WholeDeckSize = 4 * HunCardRanks.values().length;
+        assertEquals(WholeDeckSize - 1, myDeck.deck.size());
+    }
+
+    @Test
+    public void getNext2Cards() {
+        Deck myDeck = new Deck();
+        Integer nextCard = myDeck.getNextCard();
+        System.out.println("Következő kártya: " + nextCard);
+        nextCard = myDeck.getNextCard();
+        System.out.println("Következő kártya: " + nextCard);
+        int WholeDeckSize = 4 * HunCardRanks.values().length;
+        assertEquals(WholeDeckSize - 2, myDeck.deck.size());
+    }
+
 }
