@@ -39,8 +39,16 @@ public class Hand {
         } else if (sumOfCards < 21) {
             actualScore = HandScores.MAY_HIT_OR_STAND.toString();
         } else if (sumOfCards > 21) {
-            actualScore = HandScores.BUST.toString();
+            if (numberOfCards == 2 && handHas2Aces()) {
+                actualScore = HandScores.BLACKJACK.toString();
+            } else {
+                actualScore = HandScores.BUST.toString();
+            }
         }
+    }
+
+    private boolean handHas2Aces() {
+        return hand.get(0) == 11 && hand.get(1) == 11;
     }
 
     private void validateHand() {
