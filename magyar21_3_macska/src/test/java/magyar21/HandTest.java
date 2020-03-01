@@ -66,4 +66,19 @@ public class HandTest {
         assertEquals(expectedNumberOfCards, hand.getNumberOfCards());
         assertEquals(expectedScore, hand.getActualScore());
     }
+
+    @Test
+    public void evalHandHasBustTest() {
+        hand = new Hand();
+        hand.addCard(11);
+        hand.addCard(7);
+        hand.addCard(8);
+        hand.evaluateHand();
+        Integer expectedSumOfCards = 26;
+        Integer expectedNumberOfCards = 3;
+        String expectedScore = HandScores.BUST.toString();
+        assertEquals(expectedSumOfCards, hand.getSumOfCards());
+        assertEquals(expectedNumberOfCards, hand.getNumberOfCards());
+        assertEquals(expectedScore, hand.getActualScore());
+    }
 }
