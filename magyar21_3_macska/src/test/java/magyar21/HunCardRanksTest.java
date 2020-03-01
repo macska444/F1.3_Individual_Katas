@@ -16,4 +16,5 @@ public class HunCardRanksTest {
     public void hasCardFalseTest() {
         assertFalse(HunCardRanks.hasCard(1));
     }
+
 }

@@ -49,6 +49,8 @@ public class Hand {
     private void calculateScore() {
         if (sumOfCards == 21) {
             actualScore = HandScores.BLACKJACK.toString();
+        } else if (sumOfCards < 15) {
+            actualScore = HandScores.MUST_HIT.toString();
         } else if (sumOfCards < 21) {
             actualScore = HandScores.MAY_HIT_OR_STAND.toString();
         } else if (sumOfCards > 21) {
