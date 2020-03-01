@@ -46,7 +46,10 @@ public class HandTest {
         hand.evaluateHand();
         Integer expectedSumOfCards = 13;
         Integer expectedNumberOfCards = 3;
+        String expectedScore = HandScores.MAY_HIT_OR_STAND.toString();
         assertEquals(expectedSumOfCards, hand.getSumOfCards());
         assertEquals(expectedNumberOfCards, hand.getNumberOfCards());
+        assertEquals(expectedScore, hand.getActualScore());
+
     }
 }
