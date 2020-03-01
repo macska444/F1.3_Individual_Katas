@@ -3,7 +3,10 @@ package magyar21;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 public class HandTest {
     protected Hand hand;
@@ -15,6 +18,9 @@ public class HandTest {
 
     @Test
     public void evaluateHand() {
-        assertFalse(true);
+        List<Integer> myHand = Arrays.asList(7);
+        Integer expected = 7;
+
+        assertEquals(expected, hand.evaluateHand(myHand));
     }
 }
