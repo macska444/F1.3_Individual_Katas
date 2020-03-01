@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class HandTest {
     protected Hand hand;
@@ -94,5 +95,45 @@ public class HandTest {
         assertEquals(expectedSumOfCards, hand.getSumOfCards());
         assertEquals(expectedNumberOfCards, hand.getNumberOfCards());
         assertEquals(expectedScore, hand.getActualScore());
+    }
+
+    @Test
+    public void evalHandHas22NotFrom2AceTest() {
+        hand = new Hand();
+        hand.addCard(11);
+        hand.addCard(7);
+        hand.addCard(4);
+        hand.evaluateHand();
+        Integer expectedSumOfCards = 22;
+        Integer expectedNumberOfCards = 3;
+        String expectedScore = HandScores.BUST.toString();
+        assertEquals(expectedSumOfCards, hand.getSumOfCards());
+        assertEquals(expectedNumberOfCards, hand.getNumberOfCards());
+        assertEquals(expectedScore, hand.getActualScore());
+    }
+
+    @Test
+    public void rightWithout2AceTest() {
+        hand = new Hand();
+        hand.addCard(7);
+        hand.addCard(4);
+        hand.evaluateHand();
+        hand.playerSaysWithoutAce();
+        Integer expectedSumOfCards = 11;
+        Integer expectedNumberOfCards = 2;
+        String expectedScore = HandScores.MAY_HIT_OR_STAND.toString();
+        assertEquals(expectedSumOfCards, hand.getSumOfCards());
+        assertEquals(expectedNumberOfCards, hand.getNumberOfCards());
+        assertEquals(expectedScore, hand.getActualScore());
+        assertTrue(hand.isWithoutAce());
+    }
+
+    @Test(expected = WrongWithoutAce.class)
+    public void wrongWithout2AceTest() {
+        hand = new Hand();
+        hand.addCard(7);
+        hand.addCard(8);
+        hand.evaluateHand();
+        hand.playerSaysWithoutAce();
     }
 }

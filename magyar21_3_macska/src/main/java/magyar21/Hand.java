@@ -9,6 +9,7 @@ public class Hand {
     int numberOfCards = 0;
     Integer sumOfCards = 0;
     String actualScore = "Not evaluated yet";
+    boolean isWithoutAce = false;
 
     public void addCard(Integer card) {
         hand.add(card);
@@ -31,6 +32,18 @@ public class Hand {
 
     public String getActualScore() {
         return actualScore;
+    }
+
+    public boolean isWithoutAce() {
+        return isWithoutAce;
+    }
+
+    public void playerSaysWithoutAce() {
+        if (numberOfCards >= 2 && sumOfCards == 11) {
+            isWithoutAce = true;
+        } else {
+            throw new WrongWithoutAce();
+        }
     }
 
     private void calculateScore() {
