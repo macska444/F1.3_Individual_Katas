@@ -1,15 +1,25 @@
 package magyar21;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Hand {
-    public Integer evaluateHand(List<Integer> hand) {
-        validateHand(hand);
-        return sum(hand);
+    List<Integer> hand = new ArrayList<>();
+    int numberOfCards = 0;
+    Integer sumOfCards = 0;
+
+    public void addCard(Integer cardRank) {
+        hand.add(cardRank);
     }
 
-    private void validateHand(List<Integer> hand) {
+    public void evaluateHand() {
+        validateHand();
+        numberOfCards = hand.size();
+        sumOfCards = sumUpCards();
+    }
+
+    private void validateHand() {
         if (hand == null || hand.size() == 0) {
             throw new EmptyHandException();
         }
@@ -20,7 +30,7 @@ public class Hand {
         }
     }
 
-    private Integer sum(List<Integer> hand) {
+    private Integer sumUpCards() {
         Integer score = 0;
         for (Integer cardRank : hand) {
             score += cardRank;
@@ -28,4 +38,11 @@ public class Hand {
         return score;
     }
 
+    public Integer getSumOfCards() {
+        return sumOfCards;
+    }
+
+    public Integer getNumberOfCards() {
+        return numberOfCards;
+    }
 }

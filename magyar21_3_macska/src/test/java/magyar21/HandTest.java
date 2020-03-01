@@ -3,9 +3,6 @@ package magyar21;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
 public class HandTest {
@@ -18,20 +15,38 @@ public class HandTest {
 
     @Test
     public void evaluateHand1CardTest() {
-        List<Integer> myHand = Arrays.asList(7);
+        hand = new Hand();
+        hand.addCard(7);
         Integer expected = 7;
-        assertEquals(expected, hand.evaluateHand(myHand));
+        hand.evaluateHand();
+        assertEquals(expected, hand.getSumOfCards());
     }
 
     @Test(expected = EmptyHandException.class)
     public void evalHandEmptyTest() {
-        List<Integer> myHand = null;
-        hand.evaluateHand(myHand);
+        hand = new Hand();
+        hand.evaluateHand();
     }
 
     @Test(expected = InvalidCardRank.class)
     public void evalHandHasInvalidCardRanksTest() {
-        List<Integer> myHand = Arrays.asList(7, 4, 1);
-        hand.evaluateHand(myHand);
+        hand = new Hand();
+        hand.addCard(7);
+        hand.addCard(4);
+        hand.addCard(1);
+        hand.evaluateHand();
+    }
+
+    @Test
+    public void evalHandHas3ValidCardRanksTest() {
+        hand = new Hand();
+        hand.addCard(7);
+        hand.addCard(4);
+        hand.addCard(2);
+        hand.evaluateHand();
+        Integer expectedSumOfCards = 13;
+        Integer expectedNumberOfCards = 3;
+        assertEquals(expectedSumOfCards, hand.getSumOfCards());
+        assertEquals(expectedNumberOfCards, hand.getNumberOfCards());
     }
 }
