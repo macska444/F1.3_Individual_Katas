@@ -52,4 +52,18 @@ public class HandTest {
         assertEquals(expectedScore, hand.getActualScore());
 
     }
+
+    @Test
+    public void evalHandHas21Test() {
+        hand = new Hand();
+        hand.addCard(11);
+        hand.addCard(10);
+        hand.evaluateHand();
+        Integer expectedSumOfCards = 21;
+        Integer expectedNumberOfCards = 2;
+        String expectedScore = HandScores.BLACKJACK.toString();
+        assertEquals(expectedSumOfCards, hand.getSumOfCards());
+        assertEquals(expectedNumberOfCards, hand.getNumberOfCards());
+        assertEquals(expectedScore, hand.getActualScore());
+    }
 }
