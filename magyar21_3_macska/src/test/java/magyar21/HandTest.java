@@ -17,10 +17,15 @@ public class HandTest {
     }
 
     @Test
-    public void evaluateHand() {
+    public void evaluateHand1CardTest() {
         List<Integer> myHand = Arrays.asList(7);
         Integer expected = 7;
-
         assertEquals(expected, hand.evaluateHand(myHand));
+    }
+
+    @Test(expected = EmptyHandException.class)
+    public void evalHandEmptyTest() {
+        List<Integer> myHand = null;
+        hand.evaluateHand(myHand);
     }
 }
