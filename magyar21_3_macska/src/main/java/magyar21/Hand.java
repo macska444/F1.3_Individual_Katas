@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Hand {
+    private static final Integer BLACKJACK = 21;
+    private static final Integer MINIMUM_SCORE = 15;
+    private static final int TOO_MANY_CARDS = 5;
+
     List<Integer> hand = new ArrayList<>();
     int numberOfCards = 0;
     Integer sumOfCards = 0;
@@ -47,13 +51,17 @@ public class Hand {
     }
 
     private void calculateScore() {
-        if (sumOfCards == 21) {
+        if (sumOfCards == BLACKJACK) {
             actualScore = HandScores.BLACKJACK.toString();
-        } else if (sumOfCards < 15) {
+        } else if (sumOfCards < MINIMUM_SCORE) {
             actualScore = HandScores.MUST_HIT.toString();
-        } else if (sumOfCards < 21) {
-            actualScore = HandScores.MAY_HIT_OR_STAND.toString();
-        } else if (sumOfCards > 21) {
+        } else if (sumOfCards < BLACKJACK) {
+            if (numberOfCards >= TOO_MANY_CARDS) {
+                actualScore = HandScores.MAY_GET_NEW_HAND.toString();
+            } else {
+                actualScore = HandScores.MAY_HIT_OR_STAND.toString();
+            }
+        } else if (sumOfCards > BLACKJACK) {
             if (numberOfCards == 2 && handHas2Aces()) {
                 actualScore = HandScores.BLACKJACK.toString();
             } else if (isWithoutAce() && lastCardIsAce()) {

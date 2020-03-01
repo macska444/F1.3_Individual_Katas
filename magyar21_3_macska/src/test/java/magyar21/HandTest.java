@@ -170,4 +170,23 @@ public class HandTest {
         assertEquals(expectedScore, hand.getActualScore());
     }
 
+    @Test
+    public void handHasMoreThen5ButNotBustTest() {
+        hand = new Hand();
+        hand.addCard(HunCardRanks.VII.getValue());
+        hand.addCard(HunCardRanks.KIRALY.getValue());
+        hand.addCard(HunCardRanks.ALSO.getValue());
+        hand.addCard(HunCardRanks.FELSO.getValue());
+        hand.addCard(HunCardRanks.ALSO.getValue());
+        hand.evaluateHand();
+        Integer expectedSumOfCards = 18;
+        Integer expectedNumberOfCards = 5;
+        String expectedScore = HandScores.MAY_GET_NEW_HAND.toString();
+
+        assertEquals(expectedSumOfCards, hand.getSumOfCards());
+        assertEquals(expectedNumberOfCards, hand.getNumberOfCards());
+        assertEquals(expectedScore, hand.getActualScore());
+    }
+
+
 }
