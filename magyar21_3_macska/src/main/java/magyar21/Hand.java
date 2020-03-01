@@ -1,5 +1,6 @@
 package magyar21;
 
+
 import java.util.List;
 
 public class Hand {
@@ -12,7 +13,11 @@ public class Hand {
         if (hand == null || hand.size() == 0) {
             throw new EmptyHandException();
         }
-
+        for (Integer cardRank : hand) {
+            if (!HunCardRanks.hasCard(cardRank)) {
+                throw new InvalidCardRank();
+            }
+        }
     }
 
     private Integer sum(List<Integer> hand) {

@@ -28,4 +28,10 @@ public class HandTest {
         List<Integer> myHand = null;
         hand.evaluateHand(myHand);
     }
+
+    @Test(expected = InvalidCardRank.class)
+    public void evalHandHasInvalidCardRanksTest() {
+        List<Integer> myHand = Arrays.asList(7, 4, 1);
+        hand.evaluateHand(myHand);
+    }
 }
