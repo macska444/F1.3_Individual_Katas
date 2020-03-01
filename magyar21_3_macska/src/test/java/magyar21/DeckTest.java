@@ -8,7 +8,7 @@ public class DeckTest {
 
     @Test
     public void generateDeckTest() {
-        Deck myDeck = new Deck();
+        Deck myDeck = new Deck(1);
         Integer expectedCard = 10;
         assertEquals(expectedCard, myDeck.deck.get(20));
         int expectedNumOfCards = 4 * HunCardRanks.values().length;
@@ -16,8 +16,8 @@ public class DeckTest {
     }
 
     @Test
-    public void getNextCard() {
-        Deck myDeck = new Deck();
+    public void getNextCardTest() {
+        Deck myDeck = new Deck(1);
         Integer nextCard = myDeck.getNextCard();
         System.out.println("Következő kártya: " + nextCard);
         int WholeDeckSize = 4 * HunCardRanks.values().length;
@@ -25,14 +25,24 @@ public class DeckTest {
     }
 
     @Test
-    public void getNext2Cards() {
-        Deck myDeck = new Deck();
+    public void getNext2CardsTest() {
+        Deck myDeck = new Deck(1);
         Integer nextCard = myDeck.getNextCard();
         System.out.println("Következő kártya: " + nextCard);
         nextCard = myDeck.getNextCard();
         System.out.println("Következő kártya: " + nextCard);
         int WholeDeckSize = 4 * HunCardRanks.values().length;
         assertEquals(WholeDeckSize - 2, myDeck.deck.size());
+    }
+
+    @Test(expected = NoMoreCardInDeck.class)
+    public void NoMoreCardInTheDeckTest() {
+        Deck myDeck = new Deck(3);
+        int WholeDeckSize = 3 * 4 * HunCardRanks.values().length;
+        for (int i = 0; i < WholeDeckSize + 1; i++) {
+            Integer nextCard = myDeck.getNextCard();
+            System.out.println(i + 1 + ". kártya: " + nextCard + " deck mérete: " + myDeck.deck.size());
+        }
     }
 
 }
